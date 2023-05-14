@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>TP Integrador Front | BootStrap |Lautaro Roldan</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--NAV-->
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top fondoNavBar"
+        id="nav"
+      >
+        <div class="container justify-content-md-end">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./img/logo/codoacodo.png"
+              alt="Logo"
+              class="logo"
+              width="150px"
+            />Conf Bs As</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#Conferencia"
+                  >La Conferencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#2Orador">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#3Fecha">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#4Orador">Conviértete en orador</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" id="green" href="">Compra tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--MAIN-->
+    <main>
+      <!--SECTION-->
+      <section>
+        <!--CONF BS AS-->
+        <div
+          id="Conferencia"
+          class="carousel carousel-dark slide d-flex vh-100 bg-black align-items-center justify-content-end bg-opacity-50"
+          data-bs-ride="carousel"
+        >
+          <div class="row me-md-5 col-lg-5 pCarrousel">
+            <div class="col align-self-end text-end text-white">
+              <h1 class="fw-semibold">Conf Bs As</h1>
+              <p class="fs-5">
+                Bs As llega por primera vez a Argentina. Un evento para
+                compartir con nuestra comunidad el conocimiento y experiencia de
+                los expertos que están creando el futuro de Internet. Ven a
+                conocer a miembros del evento, a otros estudiantes de Codo a
+                Codo y los oradores de primer nivel que tenemos para ti. ¡Te
+                esperamos!
+              </p>
+              <div class="d-flex justify-content-end column-gap-3">
+                <a
+                  role="button"
+                  class="btn btn-outline-light"
+                  href="#conv-orador"
+                  >Quiero ser orador</a
+                >
+                <button type="button" class="btn" id="btnGreen">
+                  Comprar tickets
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-inner position-absolute vh-100 z-n1">
+            <div class="carousel-item active">
+              <img
+                src="./img/fondos/ba1.jpg"
+                class="d-block"
+                alt="Imagen de Buenos Aires"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/fondos/ba2.jpg"
+                class="d-block"
+                alt="Imagen de Buenos Aires"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/fondos/ba3.jpg"
+                class="d-block"
+                alt="Imagen de Buenos Aires"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--ORADORES-->
+        <div class="container mb-3 mt-3" id="2Orador">
+          <div class="row">
+            <div class="text-center">
+              <h6 class="fw-normal">CONOCE A LOS</h6>
+              <h2>ORADORES</h2>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3">
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <img
+                    src="./img/personas/steve.jpg"
+                    class="card-img-top"
+                    alt="Steve Jobs"
+                  />
+                  <div class="card-body">
+                    <button
+                      type="button"
+                      class="btn btn-warning fw-bold"
+                      style="
+                        --bs-btn-padding-y: 0.01rem;
+                        --bs-btn-padding-x: 0.4rem;
+                        --bs-btn-font-size: 0.8rem;
+                      "
+                    >
+                      JavaScript
+                    </button>
+                    <button
+                      type="button"
+                      class="btn fw-bold"
+                      id="btnSkyBlue"
+                      style="
+                        --bs-btn-padding-y: 0.01rem;
+                        --bs-btn-padding-x: 0.4rem;
+                        --bs-btn-font-size: 0.8rem;
+                      "
+                    >
+                      React
+                    </button>
+                    <h4 class="card-title">Steve Jobs</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quod in placeat sit aut ratione magnam assumenda
+                      laudantium provident? Architecto quibusdam expedita ut
+                      unde, eum minus rerum asperiores. Deleniti, distinctio
+                      accusantium.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <img
+                    src="./img/personas/bill.jpg"
+                    class="card-img-top"
+                    alt="Bill Gates"
+                  />
+                  <div class="card-body">
+                    <button
+                      type="button"
+                      class="btn btn-warning fw-bold"
+                      style="
+                        --bs-btn-padding-y: 0.01rem;
+                        --bs-btn-padding-x: 0.4rem;
+                        --bs-btn-font-size: 0.8rem;
+                      "
+                    >
+                      JavaScript
+                    </button>
+                    <button
+                      type="button"
+                      class="btn fw-bold"
+                      id="btnSkyBlue"
+                      style="
+                        --bs-btn-padding-y: 0.01rem;
+                        --bs-btn-padding-x: 0.4rem;
+                        --bs-btn-font-size: 0.8rem;
+                      "
+                    >
+                      React
+                    </button>
+                    <h4 class="card-title">Bill Gates</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam odio temporibus aliquid laboriosam voluptas
+                      laborum quas, dicta ipsum iste totam? Alias maxime
+                      dolores, labore provident sapiente quia cupiditate
+                      consequuntur corrupti!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <img
+                    src="./img/personas/ada.jpeg"
+                    class="card-img-top"
+                    alt="Ada Lovelace"
+                  />
+                  <div class="card-body">
+                    <button
+                      type="button"
+                      class="btn btn-secondary fw-bold"
+                      style="
+                        --bs-btn-padding-y: 0.01rem;
+                        --bs-btn-padding-x: 0.4rem;
+                        --bs-btn-font-size: 0.8rem;
+                      "
+                    >
+                      Negocios
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger fw-bold"
+                      style="
+                        --bs-btn-padding-y: 0.01rem;
+                        --bs-btn-padding-x: 0.4rem;
+                        --bs-btn-font-size: 0.8rem;
+                      "
+                    >
+                      Startups
+                    </button>
+                    <h4 class="card-title">Ada Lovelace</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Impedit ipsam enim, ab modi repellat at assumenda ad
+                      excepturi sed exercitationem fuga! Doloribus doloremque
+                      maiores reiciendis veritatis sunt hic quos obcaecati?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--BS AS OCTUBRE | Lugar y Fecha-->
+        <div class="fondoBsAsOctubre" id="3Fecha">
+          <div class="row g-0">
+            <div class="col-md-6 border-end">
+              <img src="./img/fondos/honolulu.jpg" class="img-fluid" />
+            </div>
+            <div class="col-md-6 border-start text-white p-4">
+              <div class="card-body">
+                <h3 class="card-title pb-2">Bs As - Octubre</h3>
+                <p class="card-text fs-6">
+                  Buenos Aires es la provincia y localidad más grande del estado
+                  de Argentina, en los Estados Unidos, Honolulu es la mas sureña
+                  de entre las pincipales clidades estadounidenses. Aunque el
+                  nombre de Honolulu se refiere al área urbana en la costa
+                  sureste de la isla de Oahu, la ciudad y el condado de Honolulu
+                  han formado una ciudad- condado consolidada que cbre toda la
+                  ciudad (aproximadamentes 600km2 de superficie).
+                </p>
+                <button type="button" class="btn btn-outline-light">
+                  Conocé mas
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--ORADOR FORM-->
+        <div class="container mt-4 mb-3" id="4Orador">
+          <div class="text-center">
+            <h6 class="fw-normal">CONVIÉRTETE EN UN</h6>
+            <h2>ORADOR</h2>
+            <p>
+              Anótate como orador para dar una charla ignite. Cuéntanos de qué
+              quieres hablar!
+            </p>
+          </div>
+
+          <div class="d-grid g-2 col-7 mx-auto">
+            <div class="row row-cols-2 g-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre"
+                  aria-label="Nombre"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Apellido"
+                  aria-label="Apellido"
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  class="form-control"
+                  placeholder="Sobre qué quieres hablar?"
+                  cols="30"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-12 mb-2">
+              <p class="text-start fontOradorS fw-light">
+                Recuerda incluir un título para tu charla
+              </p>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn w-100" id="btnLightGreen">
+                Enviar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="pt-3 bg-gradient">
+      <div
+        class="row justify-content-center align-items-center col-lg-12 g-5 text-center"
+      >
+        <div class="col-lg-1">
+          <p class="">Preguntas frecuentes</p>
+        </div>
+        <div class="col-lg-1">
+          <p>Contáctanos</p>
+        </div>
+        <div class="col-lg-1">
+          <p>Prensa</p>
+        </div>
+        <div class="col-lg-1">
+          <p>Conferencias</p>
+        </div>
+        <div class="col-lg-1">
+          <p>Términos y condiciones</p>
+        </div>
+        <div class="col-lg-1">
+          <p>Privacidad</p>
+        </div>
+        <div class="col-lg-1">
+          <p>Estudiantes</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

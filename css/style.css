@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  background-color: rgb(53, 58, 64);
+}
+
+footer {
+  color: white;
+  background-color: rgb(30, 79, 109);
+}
+
+#green {
+  color: rgb(41, 167, 68);
+}
+
+#btnGreen {
+  background-color: rgb(41, 167, 68);
+  color: white;
+}
+
+#btnSkyBlue {
+  background-color: rgb(19, 164, 185);
+  color: white;
+}
+
+#btnLightGreen {
+  background-color: rgb(150, 201, 62);
+  color: white;
+}
+
+.fondoNavBar {
+  background-color: rgb(53, 58, 64);
+}
+
+.fondoBsAsOctubre {
+  background-color: rgb(53, 58, 64);
+  color: white;
+}
+
+.logo {
+  width: 100px;
+}
+
+.pCarrousel {
+  padding-top: 19%;
+  padding-right: 20px;
+}
+
+.fontOradorS {
+  font-size: small;
+}
