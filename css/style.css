@@ -58,3 +58,26 @@ footer {
 .fontOradorS {
   font-size: small;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .text-line-height {
+    line-height: 1rem;
+  }
+
+  .conferenceText {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .card {
+    height: 90%;
+  }
+
+  .conferenceChild {
+    justify-content: space-between;
+  }
+
+  textarea {
+    font-size: 1.5rem;
+  }
+}
